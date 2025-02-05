@@ -1,0 +1,13 @@
+<header>
+    <div>
+        <nav>
+            <form method="POST" action="{% url 'search-hashtag'%}">
+                {% csrf_token %}
+                <input type="text" name="search" placeholder="Enter Hashtag">
+                <input type="submit"  value="Search">
+
+                <!-- <a href="{% url 'search-hashtag'%}">Stats</a> -->
+            </form>
+        </nav>
+    </div>
+</header>

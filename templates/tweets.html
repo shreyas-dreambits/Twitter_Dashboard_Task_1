@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweets</title>
+</head>
+<body>
+        {% include 'navbar.html' %}
+
+        <div>
+        {% for field in tweet %}
+            <div><h3>{{field.tweeter_user}}</h3>
+                <p> {{field.tweet_caption}} </p>
+                <b> {{field.hashtag_name}} </b>
+                <hr>
+            </div>
+        {% endfor %}
+        </div>
+</body>
+</html>
